@@ -1,4 +1,4 @@
-project('quickprotocol-core', ['c','vala'])
+project('quickprotocol-tcp', ['c','vala'])
 sources = [
   'MyLib.vala',
 ]
@@ -6,10 +6,12 @@ sources = [
 dependencys = [
   dependency('glib-2.0'),
   dependency('gobject-2.0'),
+  subproject('quickprotocol-core').get_variable('deps'),
 ]
+
 includeDirs = include_directories(meson.current_build_dir())
 lib = shared_library(
-  'quickprotocol-core',
+  'quickprotocol-tcp',
   sources,
   dependencies: dependencys,
   vala_args: '--target-glib=2.58',

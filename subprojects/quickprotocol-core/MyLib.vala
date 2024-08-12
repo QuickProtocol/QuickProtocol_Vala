@@ -1,10 +1,8 @@
-public class MyLib : Object {
+namespace QuickProtocol {
+    public class MyLib : Object {
 
-    public void hello() {
-        stdout.printf("Hello World, MyLib\n");
-    }
-
-    public int sum(int x, int y) {
-        return x + y;
+        public static void hello() {
+            stdout.printf("Hello World, QuickProtocol\n");
+        }
     }
 }

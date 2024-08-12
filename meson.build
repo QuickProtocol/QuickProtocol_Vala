@@ -1,10 +1,10 @@
 project('quickprotocol', ['c', 'vala'])
 
-libquickprotocol_core_proj = subproject('quickprotocol-core')
-libquickprotocol_core_dep = libquickprotocol_core_proj.get_variable('libquickprotocol_core_dep')
-
 executable('quickprotocol',
   'main.vala',
-  dependencies : libquickprotocol_core_dep,
+  dependencies : [
+    subproject('quickprotocol-core').get_variable('deps'),
+    subproject('quickprotocol-tcp').get_variable('deps'),
+  ],
   install : true)
 
