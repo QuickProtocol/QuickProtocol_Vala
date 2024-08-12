@@ -3,7 +3,7 @@ class Demo.HelloWorld : GLib.Object {
         QuickProtocol.MyLib.hello();
         QuickProtocol.Tcp.MyLib.hello();
 
-        stdout.printf("Hello, World\n");
+        stdout.printf("Hello, Vala\n");
         return 0;
     }
 }

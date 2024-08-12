@@ -9,7 +9,7 @@ dependencys = [
   subproject('quickprotocol-core').get_variable('deps'),
 ]
 
-includeDirs = include_directories(meson.current_build_dir())
+includeDirs = include_directories('./')
 lib = shared_library(
   'quickprotocol-tcp',
   sources,

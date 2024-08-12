@@ -3,6 +3,7 @@ namespace QuickProtocol.Tcp {
 
         public static void hello() {
             stdout.printf("Hello World, QuickProtocol.Tcp\n");
+            QuickProtocol.MyLib.hello();
         }
     }
 }

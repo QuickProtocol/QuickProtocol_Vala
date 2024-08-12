@@ -7,7 +7,7 @@ dependencys = [
   dependency('glib-2.0'),
   dependency('gobject-2.0'),
 ]
-includeDirs = include_directories(meson.current_build_dir())
+includeDirs = include_directories('./')
 lib = shared_library(
   'quickprotocol-core',
   sources,
