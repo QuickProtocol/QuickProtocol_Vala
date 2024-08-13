@@ -1,6 +1,6 @@
 project('quickprotocol-tcp', ['c','vala'])
 sources = [
-  'MyLib.vala',
+
 ]
 
 dependencys = [
